@@ -1,0 +1,72 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  #content .container, #content:nth-child(2n) .container {
+    flex-direction: column;
+  }
+
+  #content .description,  #content .media{
+    width: auto;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #main h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  #content .container {
+    padding: 10px 80px;;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header {
+    position: fixed;
+  }
+#main .container{
+    padding-top: 56px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .container {
+    visibility: hidden;
+  }
+  header .logo {
+    visibility: visible;
+  }
+  #hamburger {
+    visibility: visible;
+  }
+
+  #main h1 {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  #frames .container, #content .container {
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #main h1 {
+    font-size: 20px;
+  }
+  #frames .container, #content .container {
+    padding: 0 0;
+  }
+  #content .description {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */
+}
